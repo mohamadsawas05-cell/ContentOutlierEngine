@@ -1,0 +1,39 @@
+{
+  "_note": "Who the engine watches every week. YouTube handles start with @, Instagram usernames have no @. search_topics are YouTube searches used to catch outliers from channels you are not watching. The lists below are an example for a trading education channel: swap them for your own niche.",
+  "youtube": [
+    "@TJRTrades",
+    "@InnerCircleTrader",
+    "@PhotonTrading",
+    "@TheMovingAverage",
+    "@UmarAshraf",
+    "@ToriTrades",
+    "@RossCameron",
+    "@TheTradingGeek",
+    "@FractalFlowPro",
+    "@SMBCapital",
+    "@BLoveTrading",
+    "@JdnTrades",
+    "@theconsistenttrader",
+    "@DoyleExchange",
+    "@riotmoneyfx"
+  ],
+  "instagram": [
+    "tjrtrades",
+    "umarashraf",
+    "toritrades",
+    "innercircletrader",
+    "photontradingfx",
+    "tradingcomposure",
+    "steventrades",
+    "humbledtrader",
+    "riotmoney"
+  ],
+  "search_topics": [
+    "smart money concepts trading",
+    "prop firm challenge passed",
+    "liquidity sweep trading",
+    "supply and demand trading",
+    "market structure trading",
+    "ICT trading strategy"
+  ]
+}

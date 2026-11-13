@@ -1,0 +1,12 @@
+{
+  "name": "contentoutlierengine",
+  "version": "2.0.0",
+  "description": "Finds overperforming short and long form videos in a niche and turns them into a weekly content plan with Claude",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node engine.mjs",
+    "dry": "node engine.mjs --dry-run"
+  },
+  "dependencies": {}
+}

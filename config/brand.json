@@ -1,0 +1,32 @@
+{
+  "_note": "Everything Claude needs to write in your voice. Replace the example below (a trading education creator) with your own brand.",
+  "name": "Your Brand",
+  "creator": "A full time trader who teaches beginners how to read price action, manage risk and build discipline. Markets: indices, gold and major forex pairs.",
+  "voice": "short declarative lines, direct, confident, explain then show on the chart, no hype, no guru posturing, first person.",
+  "rules": [
+    "No em dashes anywhere, use commas instead.",
+    "No income figures or money claims in any copy.",
+    "No results guarantees.",
+    "No broker or prop firm names in copy.",
+    "English only.",
+    "Tease the method, never give full entry rules or risk numbers.",
+    "No hashtags in YouTube descriptions.",
+    "Keywords are single uppercase words for comment to DM automation."
+  ],
+  "topics": [
+    "market structure",
+    "support and resistance",
+    "supply and demand",
+    "risk management",
+    "trading psychology"
+  ],
+  "week": {
+    "reels_1_to_4": "Reels 1 to 3: split screen educational with keyword. Reel 4: trade breakdown with keyword.",
+    "reels_5_to_7": "Reel 5: greenscreen talking trade recap, no keyword. Reel 6: motivational, no keyword. Reel 7: broad top of funnel, no keyword."
+  },
+  "youtube": {
+    "cta_mid": "soft CTA to a free resource with a KEYWORD",
+    "cta_end": "CTA to your main offer, no guarantees",
+    "description": "2 to 3 plain sentences then placeholder links in square brackets, no hashtags, end with a not financial advice line"
+  }
+}

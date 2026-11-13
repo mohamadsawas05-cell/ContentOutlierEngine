@@ -1,0 +1,39 @@
+name: Weekly content plan
+
+on:
+  schedule:
+    - cron: "0 15 * * 0"   # Sundays 15:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run the engine
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node engine.mjs
+
+      - name: Save the week into the repo
+        run: |
+          DATE=$(date +%F)
+          mkdir -p weeks/$DATE
+          cp output/week.md output/week.html weeks/$DATE/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add weeks/
+          git commit -m "Weekly plan $DATE" || echo "nothing to commit"
+          git push

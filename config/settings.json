@@ -1,0 +1,12 @@
+{
+  "_note": "Tuning knobs. outlier_min = how many times above the account's normal views a video must be to count as an outlier. days_back = how recent videos must be. shorts_max_seconds = anything at or under this duration counts as short form.",
+  "outlier_min": 3.0,
+  "days_back": 45,
+  "shorts_max_seconds": 183,
+  "videos_per_channel": 15,
+  "reels_per_account": 12,
+  "top_shorts_to_use": 8,
+  "top_longform_to_use": 4,
+  "min_views_floor": 20000,
+  "anthropic_model": "claude-sonnet-4-6"
+}
